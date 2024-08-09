@@ -6,4 +6,10 @@ Rails.application.routes.draw do
       patch :delete
     end
   end
+
+  resources :items, except: %i[destroy] do
+    member do
+      patch :delete
+    end
+  end
 end
