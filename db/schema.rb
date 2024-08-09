@@ -17,6 +17,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_09_084304) do
   create_table "lists", force: :cascade do |t|
     t.string "title", null: false
     t.string "description"
+    t.datetime "deleted_at", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
